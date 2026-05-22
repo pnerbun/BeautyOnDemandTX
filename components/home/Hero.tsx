@@ -13,7 +13,7 @@ export default function Hero() {
         fill
         className="object-cover object-center"
         priority
-        quality={90}
+        quality={75}
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/30 to-charcoal/60" />
@@ -29,14 +29,9 @@ export default function Hero() {
           On-Location Bridal Beauty
         </motion.p>
 
-        <motion.h1
-          className="font-serif font-light text-warm-white text-5xl md:text-7xl lg:text-8xl mb-6"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.15, ease: "easeOut" }}
-        >
+        <h1 className="font-serif font-light text-warm-white text-5xl md:text-7xl lg:text-8xl mb-6">
           Beauty on Demand
-        </motion.h1>
+        </h1>
 
         <motion.p
           className="font-sans font-light text-warm-white/80 text-base md:text-lg mb-10 tracking-wide"

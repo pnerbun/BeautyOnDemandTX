@@ -52,6 +52,7 @@ export default function Header() {
             width={632}
             height={336}
             priority
+            sizes="105px"
             className={`h-14 w-auto transition-all duration-300 ${
               transparent
                 ? "drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]"

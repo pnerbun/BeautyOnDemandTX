@@ -57,11 +57,11 @@ export default function Footer() {
             >
               elizabethnerbun@gmail.com
             </a>
-            <p className="font-sans text-sm text-warm-white/40 italic">
+            <p className="font-sans text-sm text-warm-white/70 italic">
               Instagram coming soon
             </p>
             <div className="mt-3">
-              <p className="font-sans text-xs text-warm-white/40 leading-relaxed">
+              <p className="font-sans text-xs text-warm-white/70 leading-relaxed">
                 Serving Rockwall, Heath, Fate, Royse City,
                 <br />
                 Rowlett, Wylie, Sachse &amp; Forney, TX
@@ -73,12 +73,12 @@ export default function Footer() {
 
       <div className="border-t border-warm-white/10">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
-          <p className="font-sans text-xs text-warm-white/30">
+          <p className="font-sans text-xs text-warm-white/60">
             &copy; {new Date().getFullYear()} Beauty on Demand. All rights reserved.
           </p>
           <Link
             href="/contact"
-            className="font-sans text-xs text-terracotta hover:text-dusty-rose transition-colors tracking-widest uppercase"
+            className="font-sans text-xs text-dusty-rose hover:text-warm-white/80 transition-colors tracking-widest uppercase"
           >
             Book Your Date →
           </Link>
