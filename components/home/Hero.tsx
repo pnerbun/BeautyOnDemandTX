@@ -13,7 +13,7 @@ export default function Hero() {
         fill
         className="object-cover object-center"
         priority
-        quality={75}
+        quality={65}
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/30 to-charcoal/60" />

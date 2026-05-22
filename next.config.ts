@@ -2,8 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    qualities: [75, 90],
+    qualities: [65, 75, 90],
   },
+  transpilePackages: ["framer-motion"],
   async headers() {
     return [
       {
