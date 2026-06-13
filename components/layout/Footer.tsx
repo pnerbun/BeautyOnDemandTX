@@ -57,9 +57,14 @@ export default function Footer() {
             >
               elizabethnerbun@gmail.com
             </a>
-            <p className="font-sans text-sm text-warm-white/70 italic">
-              Instagram coming soon
-            </p>
+            <a
+              href="https://www.instagram.com/elizabethnerbun?igsh=OHNkY3dvOWJzcDh5&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-sm text-warm-white/60 hover:text-dusty-rose transition-colors"
+            >
+              @elizabethnerbun
+            </a>
             <div className="mt-3">
               <p className="font-sans text-xs text-warm-white/70 leading-relaxed">
                 Serving Rockwall, Heath, Fate, Royse City,

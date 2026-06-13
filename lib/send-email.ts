@@ -17,7 +17,7 @@ export async function sendContactEmail(data: ContactFormData) {
   const servicesText = data.services.length > 0 ? data.services.join(", ") : "Not specified";
 
   const { error } = await resend.emails.send({
-    from: "Beauty on Demand <onboarding@resend.dev>",
+    from: "Beauty on Demand <hello@beautyondemandtx.com>",
     to: TO_EMAIL,
     replyTo: data.email,
     subject: `New Wedding Inquiry from ${data.name}`,
@@ -63,4 +63,43 @@ ${data.message || "No message provided"}
   });
 
   if (error) throw new Error(error.message);
+
+  // Confirmation email to the submitter — swallow errors so a delivery failure
+  // doesn't surface as a form error to the user
+  resend.emails.send({
+    from: "Elizabeth at Beauty on Demand <hello@beautyondemandtx.com>",
+    to: data.email,
+    replyTo: TO_EMAIL,
+    subject: "We received your inquiry — Beauty on Demand",
+    text: `
+Hi ${data.name},
+
+Thank you for reaching out! I've received your inquiry and will get back to you within 1–2 business days to discuss your wedding day plans.
+
+In the meantime, feel free to browse the gallery or follow along on Instagram @elizabethnerbun.
+
+Warmly,
+Elizabeth Nerbun
+Beauty on Demand · Rockwall, TX
+elizabethnerbun@gmail.com
+    `.trim(),
+    html: `
+<div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #2C2C2C;">
+  <div style="background: #F9F5F0; padding: 32px; border-top: 3px solid #C4714A;">
+    <h1 style="font-size: 22px; font-weight: 400; margin: 0 0 4px;">Thank you, ${data.name}!</h1>
+    <p style="font-size: 13px; color: #888; margin: 0; font-family: Arial, sans-serif;">Beauty on Demand · Rockwall, TX</p>
+  </div>
+  <div style="padding: 32px; background: #fff; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; color: #444;">
+    <p>I've received your inquiry and will be in touch within <strong>1–2 business days</strong> to discuss your wedding day plans.</p>
+    <p>In the meantime, feel free to browse the gallery or follow along on Instagram for the latest looks and behind-the-scenes moments.</p>
+    <p style="margin-top: 32px;">
+      <a href="https://www.instagram.com/elizabethnerbun" style="color: #C4714A; text-decoration: none;">@elizabethnerbun on Instagram</a>
+    </p>
+  </div>
+  <div style="padding: 16px 32px; background: #F9F5F0; font-family: Arial, sans-serif; font-size: 12px; color: #aaa;">
+    Warmly, Elizabeth Nerbun &nbsp;·&nbsp; <a href="mailto:elizabethnerbun@gmail.com" style="color: #aaa;">elizabethnerbun@gmail.com</a>
+  </div>
+</div>
+    `.trim(),
+  });
 }

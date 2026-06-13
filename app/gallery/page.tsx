@@ -40,7 +40,7 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Instagram placeholder */}
+      {/* Instagram CTA */}
       <section className="py-16 px-6 bg-warm-white text-center">
         <p className="font-serif italic text-terracotta text-lg mb-3">
           Stay Connected
@@ -48,10 +48,18 @@ export default function GalleryPage() {
         <h2 className="font-serif text-3xl text-charcoal mb-4">
           Follow Along
         </h2>
-        <p className="font-sans text-charcoal/60 text-sm max-w-sm mx-auto">
-          Our Instagram is coming soon — follow us for the latest looks,
-          behind-the-scenes moments, and wedding day inspiration.
+        <p className="font-sans text-charcoal/60 text-sm max-w-sm mx-auto mb-6">
+          Follow us on Instagram for the latest looks, behind-the-scenes moments,
+          and wedding day inspiration.
         </p>
+        <a
+          href="https://www.instagram.com/elizabethnerbun?igsh=OHNkY3dvOWJzcDh5&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block font-sans text-sm font-medium text-terracotta border border-terracotta px-6 py-2.5 rounded hover:bg-terracotta hover:text-warm-white transition-colors"
+        >
+          @elizabethnerbun on Instagram
+        </a>
       </section>
     </>
   );

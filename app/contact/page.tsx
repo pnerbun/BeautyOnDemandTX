@@ -53,6 +53,10 @@ export default function ContactPage() {
                 Forney, and surrounding areas east, north, and south of
                 Rockwall.
               </p>
+              <p className="font-sans text-xs text-charcoal/50 mt-3 italic">
+                Venue outside these areas? Please inquire — travel to your
+                location can be quoted upon request.
+              </p>
             </div>
 
             <div>

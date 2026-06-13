@@ -26,7 +26,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
         >
-          On-Location Bridal Beauty
+          Wedding Hair &amp; Makeup · Rockwall, TX
         </motion.p>
 
         <h1 className="font-serif font-light text-warm-white text-5xl md:text-7xl lg:text-8xl mb-6">
@@ -39,7 +39,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
         >
-          Rockwall, TX &amp; the surrounding DFW area
+          On-location bridal beauty for Rockwall, TX &amp; the surrounding DFW area
         </motion.p>
 
         <motion.div

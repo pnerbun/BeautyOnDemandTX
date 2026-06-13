@@ -39,8 +39,8 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="relative aspect-[3/4] overflow-hidden">
             <Image
-              src="/en.jpg"
-              alt="Bridal beauty by Elizabeth Nerbun"
+              src="/about-elizabeth.jpeg"
+              alt="Elizabeth Nerbun, bridal hair and makeup artist"
               fill
               className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 50vw"

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const services = [
   {
     title: "Bridal Hair & Makeup",
-    price: "Contact for pricing",
+    price: "Starting at $150",
     description:
       "Your wedding day beauty, delivered to you. Elizabeth comes to your home, hotel, venue, or church — wherever you're getting ready — so you can relax and enjoy the morning with your people. Your look is built around your vision: whether you want romantic and soft, sleek and modern, or effortlessly boho, we make it happen.",
     includes: [
@@ -22,7 +22,7 @@ const services = [
   },
   {
     title: "Bridesmaid & Wedding Party",
-    price: "Starting at $X per person",
+    price: "Starting at $110 per person",
     description:
       "Keep your whole bridal party looking cohesive and camera-ready. We work with you to design looks that complement each other beautifully, accounting for different hair types, skin tones, and personal styles within a unified aesthetic.",
     includes: [
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: "Trial Sessions",
-    price: "Starting at $X",
+    price: "Starting at $150",
     description:
       "A trial is your chance to rehearse your wedding day look before the big day arrives. We test the style, make adjustments, and lock in exactly what you love — so on your wedding morning there are zero surprises, only excitement.",
     includes: [
@@ -45,7 +45,7 @@ const services = [
   },
   {
     title: "Engagement Shoots",
-    price: "Starting at $X",
+    price: "Starting at $150",
     description:
       "Your engagement photos are your first chapter. Look and feel absolutely radiant with professional hair and makeup that photographs beautifully in any setting — golden Texas sunsets, romantic indoor shoots, or outdoor venues.",
     includes: [
@@ -111,6 +111,60 @@ export default function ServicesPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Other Services */}
+      <section className="py-20 px-6 bg-warm-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-serif italic text-terracotta text-xl mb-4">
+              Beyond the Wedding Day
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
+              Other Services
+            </h2>
+            <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
+            <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
+              Life has no shortage of moments worth looking your absolute best.
+              Elizabeth is available for a wide range of special occasions —
+              inquire for custom pricing.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "Quinceañeras", icon: "✦" },
+              { label: "Boudoir Shoots", icon: "✦" },
+              { label: "Prom", icon: "✦" },
+              { label: "Homecoming", icon: "✦" },
+              { label: "Formal Events", icon: "✦" },
+              { label: "Photo Shoots", icon: "✦" },
+              { label: "Girls' Night Out", icon: "✦" },
+              { label: "Any Special Occasion", icon: "✦" },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="bg-cream px-4 py-5 text-center flex flex-col items-center gap-2"
+              >
+                <span className="text-sage text-sm">{item.icon}</span>
+                <span className="font-sans text-sm text-charcoal/70">
+                  {item.label}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center font-sans text-sm text-charcoal/50 italic">
+            Pricing varies by service and group size —{" "}
+            <a
+              href="/contact"
+              className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors not-italic"
+            >
+              reach out for a custom quote
+            </a>
+            .
+          </p>
         </div>
       </section>
 

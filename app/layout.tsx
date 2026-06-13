@@ -21,11 +21,11 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: {
-    default: "Beauty on Demand | Bridal Hair & Makeup in Rockwall, TX",
+    default: "Wedding Hair & Makeup Rockwall TX | Beauty on Demand",
     template: "%s | Beauty on Demand",
   },
   description:
-    "On-location bridal hair and makeup serving Rockwall, Heath, Fate, Royse City, Rowlett, Wylie, Sachse, and Forney, TX. Book your wedding day beauty today.",
+    "On-location wedding hair and makeup in Rockwall, TX. Serving Heath, Fate, Royse City, Rowlett, Wylie, Sachse, Forney & the DFW area. Book your bridal beauty today.",
   keywords: [
     "bridal hair and makeup Rockwall TX",
     "wedding makeup artist DFW",
