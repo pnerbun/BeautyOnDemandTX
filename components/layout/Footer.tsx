@@ -80,6 +80,13 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-2">
           <p className="font-sans text-xs text-warm-white/60">
             &copy; {new Date().getFullYear()} Beauty on Demand. All rights reserved.
+            {" · "}
+            <Link
+              href="/privacy"
+              className="text-warm-white/60 hover:text-dusty-rose transition-colors underline"
+            >
+              Privacy Policy
+            </Link>
           </p>
           <Link
             href="/contact"
