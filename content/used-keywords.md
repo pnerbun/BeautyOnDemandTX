@@ -8,6 +8,7 @@ Track primary keywords that have already been used as the focus of a blog post. 
 |---|---|---|---|---|
 | how many hours does wedding hair and makeup take | 001-how-many-hours-does-wedding-hair-and-makeup-take.md | 2026-05-22 | 880 | 10 |
 | do bridesmaids pay for their own wedding makeup | 2026-06-13-do-bridesmaids-pay-for-their-own-wedding-makeup.md | 2026-06-13 | 590 | 11 |
+| what to expect at a bridal hair and makeup trial | 2026-06-17-what-to-expect-at-a-bridal-hair-and-makeup-trial.md | 2026-06-17 | 590 | 8 |
 
 ---
 
@@ -25,3 +26,8 @@ These were used as secondaries in existing posts. They can still become primary 
 - what is included in a bridal hair and makeup package (used in: post 002)
 - how to coordinate bridal party beauty looks without matching (used in: post 002)
 - questions to ask before booking a wedding makeup artist (used in: post 002)
+- how to prepare for a bridal hair and makeup trial (used in: post 003)
+- what to bring to your bridal hair and makeup trial (used in: post 003)
+- do you need a bridal hair and makeup trial (used in: post 003)
+- what to wear to a bridal makeup trial appointment (used in: post 003)
+- when should you schedule a bridal hair trial (used in: post 003)
