@@ -56,6 +56,41 @@ const services = [
   },
 ];
 
+const pricing = [
+  { label: "Bridal trial", hair: "$150", makeup: "$150" },
+  { label: "Day-of — bride", hair: "$150", makeup: "$150" },
+  { label: "Bridesmaid / wedding party", hair: "$110", makeup: "$110" },
+  { label: "Youth (8–12)", hair: "$80", makeup: "$80" },
+  { label: "Flower girls (7 & under)", hair: "$50", makeup: "$25" },
+  { label: "Extensions (bring your own)", hair: "$35", makeup: "—" },
+];
+
+const travelFees = [
+  { range: "1–30 miles", fee: "$45" },
+  { range: "31–50 miles", fee: "$65" },
+  { range: "51–70 miles", fee: "$85" },
+  { range: "71–90 miles", fee: "$105" },
+];
+
+const policies = [
+  {
+    title: "Booking Deposit",
+    body: "A non-refundable deposit of $25 per person secures your booking date. Payment accepted via Venmo or Zelle.",
+  },
+  {
+    title: "Cancellations & Rescheduling",
+    body: "At least 48 hours' notice is required for any cancellation or reschedule request. Deposits are non-refundable.",
+  },
+  {
+    title: "Late Arrivals",
+    body: "A $15 late fee will be applied to your invoice for late arrivals. Please plan accordingly, especially on wedding days.",
+  },
+  {
+    title: "No-Call / No-Show",
+    body: "Clients who no-call / no-show will be blocked from future bookings.",
+  },
+];
+
 export default function ServicesPage() {
   return (
     <>
@@ -114,6 +149,95 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Pricing */}
+      <section className="py-20 px-6 bg-warm-white">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-serif italic text-terracotta text-xl mb-4">
+              Wedding Day
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
+              Pricing
+            </h2>
+            <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
+            <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
+              On-location service, priced per person. Elizabeth often partners
+              with a dedicated makeup artist for full bridal-party glam, and can
+              provide makeup herself for smaller bookings.
+            </p>
+          </div>
+
+          <div className="bg-cream">
+            <div className="grid grid-cols-[1fr_auto_auto] gap-x-6 sm:gap-x-10 px-6 py-4 border-b border-dusty-rose/40">
+              <span className="font-sans text-xs uppercase tracking-widest text-charcoal/40">
+                Service
+              </span>
+              <span className="font-sans text-xs uppercase tracking-widest text-charcoal/40 text-right w-12">
+                Hair
+              </span>
+              <span className="font-sans text-xs uppercase tracking-widest text-charcoal/40 text-right w-12">
+                Makeup
+              </span>
+            </div>
+            {pricing.map((row) => (
+              <div
+                key={row.label}
+                className="grid grid-cols-[1fr_auto_auto] gap-x-6 sm:gap-x-10 px-6 py-4 border-b border-dusty-rose/20 last:border-b-0 items-center"
+              >
+                <span className="font-sans text-sm text-charcoal/80">
+                  {row.label}
+                </span>
+                <span className="font-sans text-sm text-terracotta text-right w-12">
+                  {row.hair}
+                </span>
+                <span className="font-sans text-sm text-terracotta text-right w-12">
+                  {row.makeup}
+                </span>
+              </div>
+            ))}
+          </div>
+          <p className="font-sans text-xs text-charcoal/50 mt-5 italic text-center leading-relaxed">
+            All makeup includes complimentary false lashes (optional) and a
+            touch-up kit. Prices are per person.
+          </p>
+        </div>
+      </section>
+
+      {/* Travel fees */}
+      <section className="py-20 px-6 bg-cream">
+        <div className="max-w-2xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="font-serif italic text-terracotta text-xl mb-4">
+              Coming to You
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
+              Travel Fees
+            </h2>
+            <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
+            <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
+              Elizabeth comes to you — your venue, home, or getting-ready suite.
+              Travel is calculated by distance from Rockwall, TX. Parking and
+              toll fees are added to your invoice when incurred.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {travelFees.map((tier) => (
+              <div
+                key={tier.range}
+                className="bg-warm-white px-4 py-6 text-center flex flex-col gap-2"
+              >
+                <span className="font-sans text-xs uppercase tracking-widest text-charcoal/50">
+                  {tier.range}
+                </span>
+                <span className="font-serif text-3xl text-terracotta">
+                  {tier.fee}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Other Services */}
       <section className="py-20 px-6 bg-warm-white">
         <div className="max-w-4xl mx-auto">
@@ -165,6 +289,39 @@ export default function ServicesPage() {
             </a>
             .
           </p>
+        </div>
+      </section>
+
+      {/* Booking & cancellation policy */}
+      <section className="py-20 px-6 bg-cream">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-serif italic text-terracotta text-xl mb-4">
+              Before You Book
+            </p>
+            <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
+              Booking &amp; Cancellation Policy
+            </h2>
+            <div className="w-12 h-px bg-dusty-rose mx-auto" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-dusty-rose/20">
+            {policies.map((policy, i) => (
+              <div
+                key={policy.title}
+                className="bg-cream px-6 py-7 flex flex-col gap-3"
+              >
+                <span className="font-serif text-terracotta text-xl">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <h3 className="font-serif text-2xl text-charcoal">
+                  {policy.title}
+                </h3>
+                <p className="font-sans text-sm text-charcoal/70 leading-relaxed">
+                  {policy.body}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

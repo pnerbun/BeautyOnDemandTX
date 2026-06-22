@@ -68,7 +68,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Quinlan is about 35 minutes southeast of Rockwall. Elizabeth is glad to travel for your White Sparrow wedding — a travel fee based on distance is quoted up front at booking, so there are never any surprises.",
+      "Quinlan is about 35 minutes southeast of Rockwall. Elizabeth is glad to travel for your White Sparrow wedding — a flat travel fee based on distance from Rockwall keeps the full cost clear from the start.",
     nearbyTowns: ["Greenville", "Caddo Mills", "West Tawakoni", "Lake Tawakoni"],
   },
   {
@@ -103,7 +103,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Terrell is about 25 minutes south of Rockwall — comfortably within our core service area. A modest travel fee based on your venue's distance is quoted up front at booking.",
+      "Terrell is about 25 minutes south of Rockwall — comfortably within our core service area, with a flat travel fee based on distance from Rockwall.",
     nearbyTowns: ["Forney", "Kaufman", "Crandall", "Rockwall"],
   },
   {
@@ -138,7 +138,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Greenville is about 30 minutes northeast of Rockwall via I-30. Elizabeth is happy to travel for your wedding — a travel fee based on distance is quoted up front at booking.",
+      "Greenville is about 30 minutes northeast of Rockwall via I-30. Elizabeth is happy to travel for your wedding, with a flat travel fee based on distance from Rockwall.",
     nearbyTowns: ["Caddo Mills", "Commerce", "Quinlan", "Campbell"],
   },
   {
@@ -178,7 +178,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Sulphur Springs is about an hour east of Rockwall on I-30 — well within Elizabeth's travel range. A travel fee based on distance is added at booking and quoted up front, so you always know the full cost.",
+      "Sulphur Springs is about an hour east of Rockwall on I-30 — well within Elizabeth's travel range, with a flat travel fee based on distance from Rockwall so you always know the full cost.",
     nearbyTowns: ["Como", "Cumby", "Winnsboro", "Mount Vernon"],
   },
   {
@@ -208,7 +208,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Princeton is about 40 minutes north of Rockwall. Elizabeth happily travels throughout Collin County — a travel fee based on distance is quoted up front at booking.",
+      "Princeton is about 40 minutes north of Rockwall. Elizabeth happily travels throughout Collin County, with a flat travel fee based on distance from Rockwall.",
     nearbyTowns: ["McKinney", "Farmersville", "Wylie", "Lavon"],
   },
 ];

@@ -52,8 +52,15 @@ export default function ContactPage() {
                 Proudly serving Rockwall, TX and the DFW metro area.
               </p>
               <p className="font-sans text-xs text-charcoal/50 mt-3 italic">
-                Venue outside the DFW metro area? Please inquire — travel to
-                your location can be quoted upon request.
+                A flat travel fee based on distance from Rockwall applies —
+                see the schedule on our{" "}
+                <a
+                  href="/services"
+                  className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors not-italic"
+                >
+                  services page
+                </a>
+                . Venue farther out? Please inquire.
               </p>
             </div>
 
