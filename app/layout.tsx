@@ -25,13 +25,13 @@ export const metadata: Metadata = {
     template: "%s | Beauty on Demand",
   },
   description:
-    "On-location wedding hair and makeup in Rockwall, TX. Serving Heath, Fate, Royse City, Rowlett, Wylie, Sachse, Forney & the DFW area. Book your bridal beauty today.",
+    "On-location wedding hair and makeup serving Rockwall, TX and the DFW metro area. Book your bridal beauty today.",
   keywords: [
-    "bridal hair and makeup Rockwall TX",
+    "bridal hair and makeup DFW",
     "wedding makeup artist DFW",
-    "on-location bridal beauty Rockwall",
-    "wedding hair Wylie TX",
-    "bridal makeup Forney TX",
+    "on-location bridal beauty DFW",
+    "wedding hair Dallas Fort Worth",
+    "bridal makeup Fort Worth TX",
     "mobile hair and makeup wedding Dallas",
   ],
   openGraph: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Beauty on Demand",
     title: "Beauty on Demand | Bridal Hair & Makeup in Rockwall, TX",
     description:
-      "On-location bridal hair and makeup serving Rockwall and the surrounding DFW area.",
+      "On-location bridal hair and makeup serving Rockwall, TX and the DFW metro area.",
   },
 };
 

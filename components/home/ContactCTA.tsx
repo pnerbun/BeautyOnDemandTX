@@ -31,8 +31,7 @@ export default function ContactCTA() {
             Dream Wedding Look
           </h2>
           <p className="font-sans text-warm-white/70 text-base mb-10 leading-relaxed">
-            Serving Rockwall, Heath, Fate, Royse City, Rowlett, Wylie, Sachse,
-            Forney, and the surrounding DFW area.
+            Serving Rockwall, TX and the DFW metro area.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

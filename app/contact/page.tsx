@@ -49,13 +49,11 @@ export default function ContactPage() {
               </h3>
               <div className="w-6 h-px bg-dusty-rose mb-5" />
               <p className="font-sans text-sm text-charcoal/70 leading-relaxed">
-                Rockwall, Heath, Fate, Royse City, Rowlett, Wylie, Sachse,
-                Forney, and surrounding areas east, north, and south of
-                Rockwall.
+                Proudly serving Rockwall, TX and the DFW metro area.
               </p>
               <p className="font-sans text-xs text-charcoal/50 mt-3 italic">
-                Venue outside these areas? Please inquire — travel to your
-                location can be quoted upon request.
+                Venue outside the DFW metro area? Please inquire — travel to
+                your location can be quoted upon request.
               </p>
             </div>
 

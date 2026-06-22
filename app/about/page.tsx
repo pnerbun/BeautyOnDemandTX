@@ -1,23 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { cities } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "About",
   description:
     "Meet Elizabeth Nerbun — licensed cosmetologist, certified instructor, and the artist behind Beauty on Demand. On-location bridal beauty in Rockwall, TX.",
 };
-
-const cities = [
-  "Rockwall",
-  "Heath",
-  "Fate",
-  "Royse City",
-  "Rowlett",
-  "Wylie",
-  "Sachse",
-  "Forney",
-];
 
 export default function AboutPage() {
   return (
@@ -109,24 +99,24 @@ export default function AboutPage() {
             Service Area
           </h2>
           <div className="w-12 h-px bg-dusty-rose mx-auto mb-8" />
-          <p className="font-sans text-charcoal/60 mb-10 leading-relaxed">
-            Beauty on Demand serves the Rockwall, TX metro area and surrounding
-            communities — east, north, and south of Rockwall. All services are
-            on-location at your getting-ready venue.
+          <p className="font-sans text-charcoal/60 mb-8 leading-relaxed">
+            Beauty on Demand proudly serves Rockwall, TX and the DFW metro
+            area. All services are on-location at your getting-ready venue.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {cities.map((city) => (
-              <span
-                key={city}
-                className="font-sans text-sm text-charcoal border border-dusty-rose/40 px-4 py-2"
+              <Link
+                key={city.slug}
+                href={`/locations/${city.slug}`}
+                className="font-sans text-sm text-charcoal border border-dusty-rose/40 px-4 py-2 hover:border-terracotta hover:text-terracotta transition-colors"
               >
-                {city}, TX
-              </span>
+                {city.name}, TX
+              </Link>
             ))}
           </div>
           <p className="font-sans text-xs text-charcoal/40 mt-6 italic">
-            Not on the list? Reach out — we may still be able to accommodate
-            your date and location.
+            Outside the DFW metro area? Reach out — we may still be able to
+            accommodate your date and location.
           </p>
         </div>
       </section>

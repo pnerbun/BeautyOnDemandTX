@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Where do you travel for weddings?",
-    a: "We serve Rockwall, Heath, Fate, Royse City, Rowlett, Wylie, Sachse, Forney, and the surrounding areas east, north, and south of Rockwall. We do not travel west of Lake Ray Hubbard at this time. Not sure if you're in our area? Reach out and ask!",
+    a: "We serve Rockwall, TX and the DFW metro area, coming on-location to your home, hotel, venue, or church. Not sure if you're in our area? Reach out and ask!",
   },
   {
     q: "How far in advance should I book?",

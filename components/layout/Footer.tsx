@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import { cities } from "@/lib/locations";
 
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-warm-white/80">
-      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="flex flex-col gap-4">
           <Link
@@ -22,7 +23,7 @@ export default function Footer() {
           </Link>
           <p className="font-sans text-sm leading-relaxed text-warm-white/60">
             On-location bridal hair &amp; makeup serving Rockwall, TX and the
-            surrounding DFW area.
+            DFW metro area.
           </p>
         </div>
 
@@ -42,6 +43,24 @@ export default function Footer() {
                 className="font-sans text-sm text-warm-white/60 hover:text-dusty-rose transition-colors"
               >
                 {label}
+              </Link>
+            ))}
+          </nav>
+        </div>
+
+        {/* Areas we serve */}
+        <div>
+          <h3 className="font-serif text-warm-white text-lg mb-5">
+            Areas We Serve
+          </h3>
+          <nav className="flex flex-col gap-2">
+            {cities.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/locations/${city.slug}`}
+                className="font-sans text-sm text-warm-white/60 hover:text-dusty-rose transition-colors"
+              >
+                {city.name}, TX
               </Link>
             ))}
           </nav>
@@ -67,9 +86,9 @@ export default function Footer() {
             </a>
             <div className="mt-3">
               <p className="font-sans text-xs text-warm-white/70 leading-relaxed">
-                Serving Rockwall, Heath, Fate, Royse City,
+                Serving Rockwall, TX
                 <br />
-                Rowlett, Wylie, Sachse &amp; Forney, TX
+                and the DFW metro area
               </p>
             </div>
           </div>
