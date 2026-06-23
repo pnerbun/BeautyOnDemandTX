@@ -8,7 +8,7 @@ export default function ContactCTA() {
   return (
     <section className="relative py-28 px-6 overflow-hidden">
       <Image
-        src="/gallery/170930_004.jpg"
+        src="/gallery/wedding-01-outdoor-bridal-portrait-04.jpg"
         alt="Bridal beauty"
         fill
         className="object-cover object-center"

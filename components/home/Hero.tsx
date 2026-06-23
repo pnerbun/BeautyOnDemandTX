@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden">
       <Image
-        src="/gallery/img_1995.jpg"
+        src="/gallery/wedding-04-bridesmaids-01.jpg"
         alt="Bridal hair and makeup by Beauty on Demand"
         fill
         className="object-cover object-center"

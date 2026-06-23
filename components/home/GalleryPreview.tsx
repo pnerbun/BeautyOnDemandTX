@@ -5,12 +5,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const previewPhotos = [
-  "img_2418.jpg",
-  "img_2594.jpg",
-  "img_6928.jpg",
-  "170930_001-2.jpg",
-  "img_7042.jpg",
-  "img_2669.jpg",
+  "wedding-04-wedding-party-04.jpg",
+  "wedding-05-bride-getting-ready-08.jpg",
+  "wedding-09-bride-and-groom-05.jpg",
+  "wedding-01-bride-getting-ready-01.jpg",
+  "wedding-10-bridal-portrait-18.jpg",
+  "wedding-05-bridesmaids-12.jpg",
 ];
 
 export default function GalleryPreview() {
