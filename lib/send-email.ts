@@ -1,7 +1,22 @@
 import { Resend } from "resend";
+import twilio from "twilio";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = process.env.CONTACT_EMAIL ?? "elizabethnerbun@gmail.com";
+
+const {
+  TWILIO_ACCOUNT_SID,
+  TWILIO_API_KEY_SID,
+  TWILIO_API_KEY_SECRET,
+  TWILIO_FROM_NUMBER,
+  SMS_NOTIFY_TO,
+} = process.env;
+const twilioClient =
+  TWILIO_API_KEY_SID && TWILIO_API_KEY_SECRET && TWILIO_ACCOUNT_SID
+    ? twilio(TWILIO_API_KEY_SID, TWILIO_API_KEY_SECRET, {
+        accountSid: TWILIO_ACCOUNT_SID,
+      })
+    : null;
 
 interface ContactFormData {
   name: string;
@@ -63,6 +78,18 @@ ${data.message || "No message provided"}
   });
 
   if (error) throw new Error(error.message);
+
+  // SMS notification via Twilio — fire-and-forget so a delivery failure never
+  // surfaces as a form error to the user.
+  if (twilioClient && TWILIO_FROM_NUMBER && SMS_NOTIFY_TO) {
+    twilioClient.messages
+      .create({
+        from: TWILIO_FROM_NUMBER,
+        to: SMS_NOTIFY_TO,
+        body: `New wedding inquiry: ${data.name} (${data.email}) — ${data.weddingDate || "date TBD"}, ${data.guestCount || "?"} ppl. Check email for details.`,
+      })
+      .catch((err) => console.error("Twilio SMS notification failed:", err));
+  }
 
   // Confirmation email to the submitter — swallow errors so a delivery failure
   // doesn't surface as a form error to the user

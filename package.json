@@ -16,7 +16,8 @@
     "react-dom": "19.2.4",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "resend": "^6.12.3"
+    "resend": "^6.12.3",
+    "twilio": "^6.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
