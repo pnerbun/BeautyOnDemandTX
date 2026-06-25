@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     description:
       "On-location bridal hair and makeup serving Rockwall, TX and the DFW metro area.",
   },
+  verification: {
+    google: "L4NPcgyh2CfeOVDsNJJ66NIusSuO-zdVvohYOS6B5o4",
+  },
 };
 
 export default function RootLayout({
