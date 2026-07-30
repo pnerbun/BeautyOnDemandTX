@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy",
   description:
     "How Beauty on Demand TX collects, uses, and protects the personal information you share through the contact form on this Rockwall, TX bridal hair & makeup website.",

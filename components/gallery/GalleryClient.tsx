@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
+import { galleryAlt } from "@/lib/gallery";
 
 interface GalleryClientProps {
   images: string[];
@@ -45,7 +46,7 @@ export default function GalleryClient({ images }: GalleryClientProps) {
           >
             <Image
               src={`/gallery/${photo}`}
-              alt="Bridal beauty work by Beauty on Demand"
+              alt={galleryAlt(photo)}
               width={600}
               height={800}
               className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]"
@@ -91,7 +92,7 @@ export default function GalleryClient({ images }: GalleryClientProps) {
           >
             <Image
               src={`/gallery/${images[lightboxIndex]}`}
-              alt="Bridal beauty work by Beauty on Demand"
+              alt={galleryAlt(images[lightboxIndex])}
               width={1200}
               height={1600}
               className="w-full h-auto max-h-[90vh] object-contain"

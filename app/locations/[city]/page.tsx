@@ -4,6 +4,7 @@ import Link from "next/link";
 import GalleryPreview from "@/components/home/GalleryPreview";
 import ContactCTA from "@/components/home/ContactCTA";
 import { getCity, citySlugs } from "@/lib/locations";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -83,11 +84,11 @@ export default async function LocationPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbLd) }}
       />
 
       {/* Page header */}

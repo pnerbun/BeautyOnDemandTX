@@ -41,6 +41,49 @@ h1, h2, h3, h4, h5, h6 {
   color: #2C2C2C;
 }
 
+/* Hero entrance animations.
+   These replace Framer Motion in components/home/Hero.tsx so the hero can stay
+   a server component — the <h1> there is the page's LCP element, and keeping it
+   out of the client bundle takes the animation library off its render path.
+   Pair with an [animation-delay:*] utility to stagger. */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.anim-fade-up {
+  /* `both` holds the from-state during animation-delay, matching how Framer
+     Motion's `initial` prop behaved. */
+  animation: fade-up 0.9s cubic-bezier(0, 0, 0.2, 1) both;
+}
+
+.anim-fade-in {
+  animation: fade-in 0.8s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up,
+  .anim-fade-in {
+    /* Falls back to the elements' natural (visible) state. */
+    animation: none;
+  }
+}
+
 /* Blog post body styles */
 .prose-blog {
   font-family: var(--font-lato), sans-serif;

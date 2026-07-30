@@ -14,12 +14,18 @@ const cormorant = Cormorant_Garamond({
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  // Lato ships as separate static files per weight, so each one added here is
+  // another render-blocking download. 400 and 700 are both used; 300 was not.
+  weight: ["400", "700"],
   variable: "--font-lato",
   display: "swap",
 });
 
 export const metadata: Metadata = {
+  // Resolves every relative canonical / OG url below to an absolute one.
+  // Deliberately no `alternates.canonical` here: child pages inherit it, which
+  // would point every page at the homepage. Each page sets its own.
+  metadataBase: new URL("https://beautyondemandtx.com"),
   title: {
     default: "Wedding Hair & Makeup Rockwall TX | Beauty on Demand",
     template: "%s | Beauty on Demand",
@@ -38,9 +44,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Beauty on Demand",
+    url: "/",
     title: "Beauty on Demand | Bridal Hair & Makeup in Rockwall, TX",
     description:
       "On-location bridal hair and makeup serving Rockwall, TX and the DFW metro area.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Bride and bridesmaids with hair and makeup by Beauty on Demand",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Beauty on Demand | Bridal Hair & Makeup in Rockwall, TX",
+    description:
+      "On-location bridal hair and makeup serving Rockwall, TX and the DFW metro area.",
+    images: ["/og-image.jpg"],
   },
   verification: {
     google: "L4NPcgyh2CfeOVDsNJJ66NIusSuO-zdVvohYOS6B5o4",

@@ -22,6 +22,111 @@ export interface City {
 
 export const cities: City[] = [
   {
+    slug: "rockwall",
+    name: "Rockwall",
+    county: "Rockwall County",
+    heroKicker: "Rockwall County · Our Home Base",
+    metaTitle: "Wedding Hair & Makeup Rockwall, TX",
+    metaDescription:
+      "On-location wedding hair and makeup in Rockwall, TX. Elizabeth Nerbun comes to your home, hotel, or venue — The Castle, Parrish House, or Hilton Lakefront.",
+    intro: [
+      "Looking for on-location wedding hair and makeup in Rockwall, TX? Beauty on Demand is based right here. Elizabeth Nerbun brings the salon to you — your home, your hotel suite, or your venue's bridal room — so your wedding morning starts calmly, with the people you love, instead of in a salon chair across town.",
+      "Rockwall is where Elizabeth lives and works, which means no long drive and no rushed arrival: she is set up and ready before the day gets away from you. Licensed since 2002 and a certified instructor since 2013, she builds every look around you — soft and romantic, sleek and modern, or effortlessly boho — and keeps your whole party on schedule from the first photo through the last dance.",
+    ],
+    venuesIntro:
+      "Rockwall offers everything from a lakefront resort ballroom to a historic mansion downtown. Elizabeth serves brides getting ready at:",
+    venues: [
+      {
+        name: "The Castle at Rockwall",
+        blurb:
+          "A one-of-a-kind venue with more than 8,000 square feet of dramatic, castle-inspired architecture, hosting up to 350 guests — a striking setting that pairs beautifully with a bolder, more editorial bridal look.",
+      },
+      {
+        name: "The Parrish House",
+        blurb:
+          "A charming historic mansion venue for up to 160 guests, full of warm woodwork and natural light — an ideal backdrop for soft, romantic hair and makeup.",
+      },
+      {
+        name: "Hilton Dallas/Rockwall Lakefront",
+        blurb:
+          "Overlooking Lake Ray Hubbard, with an outdoor pergola for ceremonies and an elegant ballroom for the reception. Getting ready in your suite here makes for an unhurried, all-in-one wedding morning.",
+      },
+      {
+        name: "Little Wren Weddings & Events",
+        blurb:
+          "Just over half a mile from historic downtown Rockwall, with both indoor and outdoor space — a favorite for couples who want something intimate close to home.",
+      },
+    ],
+    travelNote:
+      "Rockwall is home base, so there's no travel fee at all — you get the full on-location experience with none of the added cost.",
+    nearbyTowns: ["Heath", "Fate", "Royse City", "Rowlett"],
+  },
+  {
+    slug: "royse-city",
+    name: "Royse City",
+    county: "Rockwall County",
+    heroKicker: "Rockwall County · Estate & Castle Country",
+    metaTitle: "Wedding Hair & Makeup Royse City, TX",
+    metaDescription:
+      "On-location wedding hair and makeup in Royse City, TX. Elizabeth Nerbun travels to The Pearl at Sabine Creek, Castle Waterford, and other venues near you.",
+    intro: [
+      "Planning your day and looking for on-location wedding hair and makeup in Royse City, TX? Beauty on Demand travels to you. Just up I-30 from Rockwall, Royse City has quietly become one of the most interesting venue corners in the area — colonial mansions, an Irish-inspired castle, and classic country barns all within a few miles of each other.",
+      "Elizabeth Nerbun arrives at whichever getting-ready spot suits your day and builds each look to match the setting — softer and more romantic for the estate venues, richer and more dramatic for the castle. Your bridal party stays coordinated and on time, and your look is made to hold through a full Texas day and evening.",
+    ],
+    venuesIntro:
+      "Royse City packs a surprising range of venues into a small footprint. Elizabeth serves brides getting ready at:",
+    venues: [
+      {
+        name: "The Pearl at Sabine Creek",
+        blurb:
+          "A colonial-style mansion set on eight wooded acres — elegant, private, and made for soft, timeless bridal looks.",
+      },
+      {
+        name: "Castle Waterford",
+        blurb:
+          "Eleven acres built around authentic Irish castle architecture, with stonework and dramatic interiors that carry a bolder, more romantic look beautifully.",
+      },
+      {
+        name: "Country Charm Events",
+        blurb:
+          "A relaxed barn-and-outdoor venue built for intimate weddings of up to about 120 guests — a warm, unfussy setting for a natural bridal look.",
+      },
+    ],
+    travelNote:
+      "Royse City is about 15 minutes northeast of Rockwall on I-30 — comfortably in our core service area at a low, flat travel fee.",
+    nearbyTowns: ["Fate", "Rockwall", "Caddo Mills", "Greenville"],
+  },
+  {
+    slug: "forney",
+    name: "Forney",
+    county: "Kaufman County",
+    heroKicker: "Kaufman County · Just South of Rockwall",
+    metaTitle: "Wedding Hair & Makeup Forney, TX",
+    metaDescription:
+      "On-location wedding hair and makeup in Forney, TX. Elizabeth Nerbun travels to The Delanie Venue, The Ritz on Buffalo Creek, and wherever you get ready.",
+    intro: [
+      "Looking for on-location wedding hair and makeup in Forney, TX? Beauty on Demand comes to you. A short drive south of Rockwall, Forney has grown into one of the most appealing wedding spots in Kaufman County — and Elizabeth Nerbun brings the full salon experience straight to your getting-ready suite.",
+      "Forney's venues lean bright and light-filled, which is a gift for photographs and a real consideration for makeup. Elizabeth finishes each look to read beautifully in that kind of light rather than washing out in it, keeps your wedding party coordinated, and makes sure the morning stays calm and on schedule.",
+    ],
+    venuesIntro:
+      "Forney's venues range from a glass-walled greenhouse to a family-run creekside facility. Elizabeth serves brides getting ready at:",
+    venues: [
+      {
+        name: "The Delanie Venue",
+        blurb:
+          "A greenhouse-inspired venue whose glass reception hall seats up to 280 beneath floor-to-ceiling windows. It has two getting-ready suites — one fitted with proper beauty stations — which makes for an especially smooth on-location morning.",
+      },
+      {
+        name: "The Ritz on Buffalo Creek",
+        blurb:
+          "A family owned and operated wedding and event facility about 20 miles east of Dallas, offering a warm, personal setting for ceremonies and receptions.",
+      },
+    ],
+    travelNote:
+      "Forney is roughly 20 minutes south of Rockwall, well inside our core service area with a flat travel fee based on distance.",
+    nearbyTowns: ["Terrell", "Heath", "Rockwall", "Crandall"],
+  },
+  {
     slug: "heath",
     name: "Heath",
     county: "Rockwall County",

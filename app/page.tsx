@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import ServicesPreview from "@/components/home/ServicesPreview";
 import GalleryPreview from "@/components/home/GalleryPreview";
 import ContactCTA from "@/components/home/ContactCTA";
+import { serializeJsonLd } from "@/lib/json-ld";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -11,6 +17,7 @@ const jsonLd = {
     "On-location wedding hair and makeup serving Rockwall, TX and the DFW metro area. Bridal hair, bridesmaid beauty, trial sessions, and engagement shoot styling.",
   url: "https://beautyondemandtx.com",
   email: "elizabethnerbun@gmail.com",
+  telephone: "+1-262-366-4414",
   image: "https://beautyondemandtx.com/logo.jpg",
   address: {
     "@type": "PostalAddress",
@@ -49,7 +56,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(jsonLd) }}
       />
       <Hero />
       <ServicesPreview />

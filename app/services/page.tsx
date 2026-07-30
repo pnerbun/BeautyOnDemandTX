@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import FAQAccordion from "@/components/services/FAQAccordion";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services" },
   title: "Services",
   description:
     "Bridal hair and makeup services in Rockwall, TX — including bridal packages, bridesmaid services, trial sessions, and engagement shoot beauty.",

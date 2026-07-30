@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact",
   description:
     "Book your wedding day hair and makeup with Beauty on Demand. Serving Rockwall, TX and the surrounding DFW area.",
@@ -40,6 +41,12 @@ export default function ContactPage() {
                 className="font-sans text-sm text-charcoal/70 hover:text-terracotta transition-colors block"
               >
                 elizabethnerbun@gmail.com
+              </a>
+              <a
+                href="tel:+12623664414"
+                className="font-sans text-sm text-charcoal/70 hover:text-terracotta transition-colors block mt-2"
+              >
+                (262) 366-4414
               </a>
             </div>
 

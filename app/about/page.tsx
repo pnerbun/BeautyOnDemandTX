@@ -4,6 +4,7 @@ import Link from "next/link";
 import { cities } from "@/lib/locations";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About",
   description:
     "Meet Elizabeth Nerbun — licensed cosmetologist, certified instructor, and the artist behind Beauty on Demand. On-location bridal beauty in Rockwall, TX.",

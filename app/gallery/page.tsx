@@ -4,6 +4,7 @@ import path from "path";
 import GalleryClient from "@/components/gallery/GalleryClient";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/gallery" },
   title: "Gallery",
   description:
     "Browse our portfolio of bridal hair and makeup work. On-location wedding beauty serving Rockwall, TX and the DFW area.",

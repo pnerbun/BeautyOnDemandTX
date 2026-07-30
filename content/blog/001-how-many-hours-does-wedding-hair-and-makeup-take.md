@@ -1,3 +1,7 @@
+---
+date: "2026-05-22"
+---
+
 # How Many Hours Does Wedding Hair and Makeup Take? A Stylist's Honest Answer
 
 **Primary keyword:** how many hours does wedding hair and makeup take  

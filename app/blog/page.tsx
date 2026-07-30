@@ -3,7 +3,9 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — Beauty on Demand",
+  // The root layout appends " | Beauty on Demand", so omit the brand here.
+  title: "Bridal Hair & Makeup Tips for Texas Brides",
+  alternates: { canonical: "/blog" },
   description:
     "Bridal hair and makeup tips, wedding day timelines, and expert advice from Elizabeth Nerbun — on-location bridal beauty artist in Rockwall, TX.",
 };

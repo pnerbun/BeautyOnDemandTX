@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -20,34 +17,19 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-        <motion.p
-          className="font-serif italic text-dusty-rose text-xl md:text-2xl mb-5 tracking-wide"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease: "easeOut" }}
-        >
+        <p className="anim-fade-up font-serif italic text-dusty-rose text-xl md:text-2xl mb-5 tracking-wide">
           Wedding Hair &amp; Makeup · Rockwall, TX
-        </motion.p>
+        </p>
 
         <h1 className="font-serif font-light text-warm-white text-5xl md:text-7xl lg:text-8xl mb-6">
           Beauty on Demand
         </h1>
 
-        <motion.p
-          className="font-sans font-light text-warm-white/80 text-base md:text-lg mb-10 tracking-wide"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-        >
+        <p className="anim-fade-up [animation-delay:0.3s] font-sans text-warm-white/80 text-base md:text-lg mb-10 tracking-wide">
           On-location bridal beauty for Rockwall, TX &amp; the surrounding DFW area
-        </motion.p>
+        </p>
 
-        <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.45, ease: "easeOut" }}
-        >
+        <div className="anim-fade-up [animation-delay:0.45s] flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/gallery"
             className="border border-warm-white/80 text-warm-white font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-warm-white hover:text-charcoal transition-colors"
@@ -60,18 +42,13 @@ export default function Hero() {
           >
             Book Your Date
           </Link>
-        </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
-      >
+      <div className="anim-fade-in [animation-delay:1.2s] absolute bottom-8 left-1/2 -translate-x-1/2">
         <div className="w-px h-12 bg-warm-white/40 mx-auto" />
-      </motion.div>
+      </div>
     </section>
   );
 }
