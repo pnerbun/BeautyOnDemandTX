@@ -10,10 +10,12 @@ interface Props {
   params: Promise<{ city: string }>;
 }
 
+// Prices are per service — hair and makeup are billed separately (see the
+// `pricing` table in app/services/page.tsx, which is the source of truth).
 const services = [
-  { title: "Bridal Hair & Makeup", price: "Starting at $150" },
-  { title: "Bridesmaid & Wedding Party", price: "Starting at $110/person" },
-  { title: "Trial Sessions", price: "Starting at $150" },
+  { title: "Bridal Hair & Makeup", price: "Starting at $150 per service" },
+  { title: "Bridesmaid & Wedding Party", price: "Starting at $110 per service" },
+  { title: "Trial Sessions", price: "Starting at $150 per service" },
   { title: "Engagement Shoots", price: "Starting at $150" },
 ];
 

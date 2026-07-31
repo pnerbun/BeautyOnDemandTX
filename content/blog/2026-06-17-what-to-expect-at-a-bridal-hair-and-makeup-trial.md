@@ -131,7 +131,7 @@ Plan on **two to three hours**. That includes the consultation, a full hair styl
 For most brides, yes. Beyond perfecting the look, a trial confirms your artist can execute your vision and that you're comfortable with them before the big day. The only brides who can reasonably skip it are those wearing minimal makeup they're confident doing themselves.
 
 **How much does a bridal trial cost?**  
-It varies by artist and market. For Beauty on Demand, bridal hair and makeup—including trials—starts at $150. Always confirm whether the trial is a separate appointment or included in your bridal package, since that differs from artist to artist.
+It varies by artist and market. For Beauty on Demand, a bridal trial is its own appointment at $150 per service — hair and makeup are priced separately, so a trial for both is $300. Always confirm whether the trial is a separate appointment or included in your bridal package, and whether prices are per service or per person, since that differs from artist to artist.
 
 **When should you schedule a bridal hair trial?**  
 Two to three months before the wedding is ideal—close enough that your hair and skin reflect the real day, far enough out to make changes. Book the appointment far earlier than that, though, especially for peak-season DFW dates that fill quickly.
