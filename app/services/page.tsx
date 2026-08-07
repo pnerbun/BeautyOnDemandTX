@@ -67,6 +67,7 @@ const pricing = [
 ];
 
 const travelFees = [
+  { range: "In Rockwall", fee: "None" },
   { range: "1–30 miles", fee: "$45" },
   { range: "31–50 miles", fee: "$65" },
   { range: "51–70 miles", fee: "$85" },
@@ -76,7 +77,7 @@ const travelFees = [
 const policies = [
   {
     title: "Booking Deposit",
-    body: "A non-refundable deposit of $25 per person secures your booking date. Payment accepted via Venmo or Zelle.",
+    body: "A non-refundable $100 deposit secures your wedding date and is applied toward your day-of services. Payment accepted via Venmo or Zelle.",
   },
   {
     title: "Cancellations & Rescheduling",
@@ -162,9 +163,19 @@ export default function ServicesPage() {
             </h2>
             <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
             <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
-              On-location service, priced per person. Elizabeth often partners
-              with a dedicated makeup artist for full bridal-party glam, and can
-              provide makeup herself for smaller bookings.
+              On-location service, priced per person. Elizabeth provides makeup
+              herself for smaller bookings; for full bridal-party glam she
+              partners with{" "}
+              <a
+                href="https://makeupandhairbyandreina.com/"
+                target="_blank"
+                rel="noopener"
+                className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"
+              >
+                Makeup &amp; Hair by Andreina
+              </a>
+              , a fellow on-location artist based in Rockwall, so larger parties
+              are finished on time.
             </p>
           </div>
 
@@ -216,12 +227,14 @@ export default function ServicesPage() {
             </h2>
             <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
             <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
-              Elizabeth comes to you — your venue, home, or getting-ready suite.
-              Travel is calculated by distance from Rockwall, TX. Parking and
-              toll fees are added to your invoice when incurred.
+              Elizabeth comes to you — your venue, home, or getting-ready
+              suite. <strong className="font-normal text-charcoal">There is
+              no travel fee anywhere in Rockwall.</strong> Beyond that, travel
+              is a flat fee calculated by distance from Rockwall, TX. Parking
+              and toll fees are added to your invoice when incurred.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {travelFees.map((tier) => (
               <div
                 key={tier.range}

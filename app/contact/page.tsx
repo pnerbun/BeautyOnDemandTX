@@ -59,8 +59,8 @@ export default function ContactPage() {
                 Proudly serving Rockwall, TX and the DFW metro area.
               </p>
               <p className="font-sans text-xs text-charcoal/50 mt-3 italic">
-                A flat travel fee based on distance from Rockwall applies —
-                see the schedule on our{" "}
+                No travel fee within Rockwall. Beyond it, a flat fee based on
+                distance applies — see the schedule on our{" "}
                 <a
                   href="/services"
                   className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors not-italic"

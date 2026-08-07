@@ -110,7 +110,7 @@ Most of your research will happen before you ever speak to someone. A few things
 
 Pricing varies a lot by market and by artist, so treat any number you read online as a range rather than a rule.
 
-For context on ours: [Beauty on Demand](/services) charges **$150 per service for the bride** and **$110 per service** for bridesmaids and wedding party — hair and makeup are priced separately, so a bride booking both is looking at $300. A bridal trial is its own appointment at the same $150 per service. Travel is a flat fee by distance from Rockwall, starting at $45 for the first 30 miles, and a $25 per-person deposit holds the date.
+For context on ours: [Beauty on Demand](/services) charges **$150 per service for the bride** and **$110 per service** for bridesmaids and wedding party — hair and makeup are priced separately, so a bride booking both is looking at $300. A bridal trial is its own appointment at the same $150 per service. There's no travel fee within Rockwall; beyond it, travel is a flat fee by distance starting at $45 for the first 30 miles. A $100 deposit holds the date and is applied toward your day-of services.
 
 What actually moves the price anywhere you look: party size, whether you want hair and makeup or just one, travel distance, how early the start time is, and whether extensions or airbrush are involved. If a quote seems unusually low for your party size, ask how many artists are coming — one person doing eight faces is a timeline problem, not a bargain.
 
@@ -134,7 +134,7 @@ Verify their cosmetology license through the Texas Department of Licensing and R
 For most brides, yes. A trial confirms both the look and whether you're comfortable with the artist before the wedding morning. It's also the honest test of whether the money is worth it for you — if you love the result, you have your answer.
 
 **How much should I budget for wedding hair and makeup?**  
-Ask for a full quote based on your actual party size, services, travel distance, and start time rather than working from a single starting price — and check whether prices are per service or per person, since hair and makeup are usually billed separately. For reference, Beauty on Demand is $150 per service for the bride and $110 per service for the wedding party, plus a flat travel fee by distance and a $25 per-person deposit.
+Ask for a full quote based on your actual party size, services, travel distance, and start time rather than working from a single starting price — and check whether prices are per service or per person, since hair and makeup are usually billed separately. For reference, Beauty on Demand is $150 per service for the bride and $110 per service for the wedding party, with no travel fee inside Rockwall and a flat fee by distance beyond it. A $100 deposit holds the date and comes off your day-of total.
 
 ---
 
