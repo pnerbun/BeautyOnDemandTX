@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import FAQAccordion from "@/components/services/FAQAccordion";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
-  title: "Services",
+  title: "Wedding Hair & Makeup Services & Pricing | Rockwall, TX",
   description:
-    "Bridal hair and makeup services in Rockwall, TX — including bridal packages, bridesmaid services, trial sessions, and engagement shoot beauty.",
+    "Bridal hair & makeup starting at $150, bridesmaids from $110/person. On-location service in Rockwall & DFW — we come to your venue. View pricing & book your date.",
 };
 
 const services = [
@@ -93,9 +94,85 @@ const policies = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where do you travel for weddings?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We serve Rockwall, TX and the DFW metro area, coming on-location to your home, hotel, venue, or church. Not sure if you're in our area? Reach out and ask!",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How far in advance should I book?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend booking as early as possible — popular wedding dates can fill up 12–18 months in advance. Once your date is set, don't wait. A deposit holds your date.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you require a minimum number of people?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "There is no strict minimum, but pricing is structured per service. We're happy to accommodate intimate weddings with just the bride, or larger wedding parties.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is a trial session required?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Trials are strongly recommended but not required. A trial gives you the chance to test your look, make adjustments, and arrive on your wedding day knowing exactly what to expect.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is your deposit and cancellation policy?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A deposit is required to hold your date. Please contact us for current deposit amounts and cancellation terms — these vary depending on the size of your booking.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does bridal hair and makeup take?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Timing varies by look and party size. A bride alone typically needs 1.5–2.5 hours. We'll work with you ahead of time to create a detailed timeline for your wedding morning.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you do both hair AND makeup?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes! Elizabeth provides both hair and makeup services, meaning you only need to coordinate with one artist for your entire bridal look.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What should I bring or prepare for my appointment?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Come with clean, dry hair unless instructed otherwise. Bring inspiration photos, any accessories you plan to wear (veil, headpiece), and have a button-down or zip-up top so you don't disturb your hair and makeup when getting dressed.",
+      },
+    },
+  ],
+};
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
+      />
+
       {/* Page header */}
       <section className="pt-40 pb-20 px-6 bg-warm-white text-center">
         <p className="font-serif italic text-terracotta text-xl mb-4">

@@ -3,9 +3,9 @@ import ContactForm from "@/components/contact/ContactForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
-  title: "Contact",
+  title: "Book Your Wedding Hair & Makeup | Beauty on Demand Rockwall, TX",
   description:
-    "Book your wedding day hair and makeup with Beauty on Demand. Serving Rockwall, TX and the surrounding DFW area.",
+    "Check availability & get a custom quote for on-location bridal hair and makeup in Rockwall & DFW. Response within 1–2 business days. No travel fee in Rockwall.",
 };
 
 export default function ContactPage() {
