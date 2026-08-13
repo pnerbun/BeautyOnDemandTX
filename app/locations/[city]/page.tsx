@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import GalleryPreview from "@/components/home/GalleryPreview";
 import ContactCTA from "@/components/home/ContactCTA";
-import { getCity, citySlugs } from "@/lib/locations";
+import { getCity, citySlugs, getTownSlug } from "@/lib/locations";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 interface Props {
@@ -217,7 +217,25 @@ export default async function LocationPage({ params }: Props) {
         <div className="w-8 h-px bg-dusty-rose mx-auto mb-6" />
         <p className="font-sans text-sm text-charcoal/60 max-w-2xl mx-auto leading-relaxed">
           Beauty on Demand is based in Rockwall, TX and serves brides throughout
-          the DFW metro area and East Texas — including {data.nearbyTowns.join(", ")}, and beyond.{" "}
+          the DFW metro area and East Texas — including{" "}
+          {data.nearbyTowns.map((town, i) => {
+            const slug = getTownSlug(town);
+            const separator = i < data.nearbyTowns.length - 1 ? ", " : "";
+            return slug ? (
+              <span key={town}>
+                <Link
+                  href={`/locations/${slug}`}
+                  className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"
+                >
+                  {town}
+                </Link>
+                {separator}
+              </span>
+            ) : (
+              <span key={town}>{town}{separator}</span>
+            );
+          })}
+          , and beyond.{" "}
           <Link
             href="/contact"
             className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"

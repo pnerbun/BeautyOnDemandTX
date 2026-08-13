@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import { serializeJsonLd } from "@/lib/json-ld";
 
@@ -143,7 +144,7 @@ const faqSchema = {
       name: "How long does bridal hair and makeup take?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Timing varies by look and party size. A bride alone typically needs 1.5–2.5 hours. We'll work with you ahead of time to create a detailed timeline for your wedding morning.",
+        text: "Timing varies by look and party size. A bride alone typically needs 2–3 hours for both hair and makeup. We'll work with you ahead of time to create a detailed timeline for your wedding morning.",
       },
     },
     {
@@ -226,6 +227,20 @@ export default function ServicesPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* See our work */}
+      <section className="py-12 px-6 bg-warm-white text-center">
+        <p className="font-sans text-charcoal/60 text-sm">
+          Want to see these services in action?{" "}
+          <Link
+            href="/gallery"
+            className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"
+          >
+            Browse our gallery
+          </Link>{" "}
+          for real bridal looks from recent weddings.
+        </p>
       </section>
 
       {/* Pricing */}

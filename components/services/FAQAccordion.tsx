@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "How long does bridal hair and makeup take?",
-    a: "Timing varies by look and party size. A bride alone typically needs 1.5–2.5 hours. We'll work with you ahead of time to create a detailed timeline for your wedding morning.",
+    a: "Timing varies by look and party size. A bride alone typically needs 2–3 hours for both hair and makeup. We'll work with you ahead of time to create a detailed timeline for your wedding morning.",
   },
   {
     q: "Do you do both hair AND makeup?",

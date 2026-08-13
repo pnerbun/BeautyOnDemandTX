@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
+import Link from "next/link";
 import GalleryClient from "@/components/gallery/GalleryClient";
 
 export const metadata: Metadata = {
@@ -41,8 +42,33 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* Instagram CTA */}
+      {/* Book CTA */}
       <section className="py-16 px-6 bg-warm-white text-center">
+        <h2 className="font-serif text-3xl md:text-4xl text-charcoal mb-4">
+          Love What You See?
+        </h2>
+        <p className="font-sans text-charcoal/60 mb-8 max-w-md mx-auto">
+          Every look is crafted on-location at your venue. Check out our services
+          and pricing, or reach out to book your date.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/contact"
+            className="inline-block bg-terracotta text-warm-white font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-terracotta-dark transition-colors"
+          >
+            Book Your Date
+          </Link>
+          <Link
+            href="/services"
+            className="inline-block border border-terracotta text-terracotta font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-terracotta hover:text-warm-white transition-colors"
+          >
+            View Services &amp; Pricing
+          </Link>
+        </div>
+      </section>
+
+      {/* Instagram CTA */}
+      <section className="py-16 px-6 bg-cream text-center">
         <p className="font-serif italic text-terracotta text-lg mb-3">
           Stay Connected
         </p>

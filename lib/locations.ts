@@ -323,3 +323,10 @@ export function getCity(slug: string): City | undefined {
 }
 
 export const citySlugs = cities.map((c) => c.slug);
+
+/** Map a town display name (e.g. "Royse City") to its city-page slug, if one exists. */
+const townToSlug = new Map(cities.map((c) => [c.name, c.slug]));
+
+export function getTownSlug(townName: string): string | undefined {
+  return townToSlug.get(townName);
+}

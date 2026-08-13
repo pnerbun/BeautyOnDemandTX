@@ -131,12 +131,30 @@ export default function AboutPage() {
           Ready to start planning your wedding day beauty? Get in touch to check
           availability.
         </p>
-        <Link
-          href="/contact"
-          className="inline-block bg-terracotta text-warm-white font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-terracotta-dark transition-colors"
-        >
-          Book a Consultation
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/contact"
+            className="inline-block bg-terracotta text-warm-white font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-terracotta-dark transition-colors"
+          >
+            Book a Consultation
+          </Link>
+          <Link
+            href="/gallery"
+            className="inline-block border border-terracotta text-terracotta font-sans text-xs tracking-widest uppercase px-10 py-4 hover:bg-terracotta hover:text-warm-white transition-colors"
+          >
+            See Our Work
+          </Link>
+        </div>
+        <p className="font-sans text-sm text-charcoal/50 mt-6">
+          Or{" "}
+          <Link
+            href="/services"
+            className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"
+          >
+            view our services and pricing
+          </Link>
+          .
+        </p>
       </section>
     </>
   );

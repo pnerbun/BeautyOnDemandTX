@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getPost, getAllSlugs } from "@/lib/blog";
+import { getPost, getAllSlugs, getAllPosts } from "@/lib/blog";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 const SITE_URL = "https://beautyondemandtx.com";
@@ -57,6 +57,11 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = await getPost(slug);
   if (!post) notFound();
+
+  const allPosts = await getAllPosts();
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== slug)
+    .slice(0, 3);
 
   const url = `${SITE_URL}/blog/${slug}`;
   const showToc = post.wordCount >= TOC_WORD_THRESHOLD && post.headings.length > 2;
@@ -177,6 +182,35 @@ export default async function BlogPostPage({ params }: Props) {
         )}
       </section>
 
+      {/* Related posts */}
+      {relatedPosts.length > 0 && (
+        <section className="py-16 px-6 bg-warm-white">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="font-serif text-2xl text-charcoal mb-8 text-center">
+              More Bridal Beauty Tips
+            </h2>
+            <div className="flex flex-col gap-6">
+              {relatedPosts.map((rp) => (
+                <Link
+                  key={rp.slug}
+                  href={`/blog/${rp.slug}`}
+                  className="group flex flex-col gap-1 border-b border-dusty-rose/30 pb-6 last:border-b-0"
+                >
+                  <span className="font-serif text-xl text-charcoal group-hover:text-terracotta transition-colors">
+                    {rp.title}
+                  </span>
+                  {rp.excerpt && (
+                    <span className="font-sans text-sm text-charcoal/50 line-clamp-2">
+                      {rp.excerpt}
+                    </span>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA */}
       <section className="py-16 px-6 bg-cream text-center">
         <p className="font-serif italic text-terracotta text-lg mb-3">
@@ -186,12 +220,20 @@ export default async function BlogPostPage({ params }: Props) {
           Let&apos;s Talk About Your Wedding Day
         </h2>
         <div className="w-12 h-px bg-dusty-rose mx-auto mb-8" />
-        <Link
-          href="/contact"
-          className="inline-block bg-terracotta text-warm-white font-sans text-xs tracking-widest uppercase px-8 py-3.5 hover:bg-terracotta-dark transition-colors"
-        >
-          Book Your Date
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/contact"
+            className="inline-block bg-terracotta text-warm-white font-sans text-xs tracking-widest uppercase px-8 py-3.5 hover:bg-terracotta-dark transition-colors"
+          >
+            Book Your Date
+          </Link>
+          <Link
+            href="/services"
+            className="inline-block border border-terracotta text-terracotta font-sans text-xs tracking-widest uppercase px-8 py-3.5 hover:bg-terracotta hover:text-warm-white transition-colors"
+          >
+            View Services &amp; Pricing
+          </Link>
+        </div>
       </section>
     </>
   );
