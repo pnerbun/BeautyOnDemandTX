@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import { serializeJsonLd } from "@/lib/json-ld";
 
@@ -7,65 +6,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services" },
   title: "Wedding Hair & Makeup Services & Pricing | Rockwall, TX",
   description:
-    "Bridal hair & makeup starting at $150, bridesmaids from $110/person. On-location service in Rockwall & DFW — we come to your venue. View pricing & book your date.",
+    "Bridal hair & makeup starting at $175, bridesmaids from $125/person. On-location service in Rockwall & DFW — we come to your venue. View pricing & book your date.",
 };
 
-const services = [
-  {
-    title: "Bridal Hair & Makeup",
-    price: "Starting at $150",
-    description:
-      "Your wedding day beauty, delivered to you. Elizabeth comes to your home, hotel, venue, or church — wherever you're getting ready — so you can relax and enjoy the morning with your people. Your look is built around your vision: whether you want romantic and soft, sleek and modern, or effortlessly boho, we make it happen.",
-    includes: [
-      "Full hair styling (up-do, half-up, or down)",
-      "Professional makeup application",
-      "On-site setup at your getting-ready location",
-      "Touch-up kit for the day",
-    ],
-  },
-  {
-    title: "Bridesmaid & Wedding Party",
-    price: "Starting at $110 per person",
-    description:
-      "Keep your whole bridal party looking cohesive and camera-ready. We work with you to design looks that complement each other beautifully, accounting for different hair types, skin tones, and personal styles within a unified aesthetic.",
-    includes: [
-      "Hair and/or makeup per bridesmaid",
-      "Coordinated look across the party",
-      "Scheduling coordinated around your wedding morning timeline",
-    ],
-  },
-  {
-    title: "Trial Sessions",
-    price: "Starting at $150",
-    description:
-      "A trial is your chance to rehearse your wedding day look before the big day arrives. We test the style, make adjustments, and lock in exactly what you love — so on your wedding morning there are zero surprises, only excitement.",
-    includes: [
-      "Full hair and/or makeup run-through",
-      "Style adjustments and refinements",
-      "Photo documentation of your final look",
-      "Recommended 4–8 weeks before your wedding",
-    ],
-  },
-  {
-    title: "Engagement Shoots",
-    price: "Starting at $150",
-    description:
-      "Your engagement photos are your first chapter. Look and feel absolutely radiant with professional hair and makeup that photographs beautifully in any setting — golden Texas sunsets, romantic indoor shoots, or outdoor venues.",
-    includes: [
-      "Full hair styling",
-      "Professional makeup application",
-      "On-location service at your shoot site",
-    ],
-  },
-];
-
 const pricing = [
-  { label: "Bridal trial", hair: "$150", makeup: "$150" },
-  { label: "Day-of — bride", hair: "$150", makeup: "$150" },
-  { label: "Bridesmaid / wedding party", hair: "$110", makeup: "$110" },
+  { label: "Bridal trial", hair: "$175", makeup: "$175" },
+  { label: "Day-of — bride", hair: "$175", makeup: "$175" },
+  { label: "Bridesmaid / wedding party", hair: "$125", makeup: "$125" },
   { label: "Youth (8–12)", hair: "$80", makeup: "$80" },
-  { label: "Flower girls (7 & under)", hair: "$50", makeup: "$25" },
-  { label: "Extensions (bring your own)", hair: "$35", makeup: "—" },
+  { label: "Flower girls (7 & under)", hair: "$65", makeup: "$25" },
+  { label: "Extensions (bring your own)", hair: "$50", makeup: "—" },
 ];
 
 const travelFees = [
@@ -174,85 +124,16 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
       />
 
-      {/* Page header */}
-      <section className="pt-40 pb-20 px-6 bg-warm-white text-center">
-        <p className="font-serif italic text-terracotta text-xl mb-4">
-          What We Offer
-        </p>
-        <h1 className="font-serif text-5xl md:text-6xl text-charcoal mb-5">
-          Services
-        </h1>
-        <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
-        <p className="font-sans text-charcoal/60 text-base max-w-lg mx-auto">
-          On-location beauty services for your wedding day and beyond, serving
-          Rockwall, TX and the surrounding DFW area.
-        </p>
-      </section>
-
-      {/* Service blocks */}
-      <section className="py-16 px-6 bg-cream">
-        <div className="max-w-4xl mx-auto flex flex-col gap-16">
-          {services.map((service, i) => (
-            <div
-              key={service.title}
-              className={`flex flex-col md:flex-row gap-10 ${
-                i % 2 === 1 ? "md:flex-row-reverse" : ""
-              }`}
-            >
-              <div className="flex-1 flex flex-col gap-4">
-                <div className="flex items-start justify-between gap-4 flex-wrap">
-                  <h2 className="font-serif text-3xl md:text-4xl text-charcoal">
-                    {service.title}
-                  </h2>
-                  <span className="font-sans text-sm text-terracotta border border-terracotta/40 px-3 py-1 shrink-0">
-                    {service.price}
-                  </span>
-                </div>
-                <div className="w-8 h-px bg-dusty-rose" />
-                <p className="font-sans text-charcoal/70 leading-relaxed">
-                  {service.description}
-                </p>
-                <ul className="mt-2 flex flex-col gap-2">
-                  {service.includes.map((item) => (
-                    <li
-                      key={item}
-                      className="font-sans text-sm text-charcoal/60 flex items-start gap-2"
-                    >
-                      <span className="text-sage mt-0.5 shrink-0">✦</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* See our work */}
-      <section className="py-12 px-6 bg-warm-white text-center">
-        <p className="font-sans text-charcoal/60 text-sm">
-          Want to see these services in action?{" "}
-          <Link
-            href="/gallery"
-            className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors"
-          >
-            Browse our gallery
-          </Link>{" "}
-          for real bridal looks from recent weddings.
-        </p>
-      </section>
-
       {/* Pricing */}
-      <section className="py-20 px-6 bg-warm-white">
+      <section className="pt-40 pb-20 px-6 bg-warm-white">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <p className="font-serif italic text-terracotta text-xl mb-4">
               Wedding Day
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
+            <h1 className="font-serif text-5xl md:text-6xl text-charcoal mb-5">
               Pricing
-            </h2>
+            </h1>
             <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
             <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
               On-location service, priced per person. Elizabeth provides makeup
@@ -300,10 +181,6 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-          <p className="font-sans text-xs text-charcoal/50 mt-5 italic text-center leading-relaxed">
-            All makeup includes complimentary false lashes (optional) and a
-            touch-up kit. Prices are per person.
-          </p>
         </div>
       </section>
 
