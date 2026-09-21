@@ -24,24 +24,6 @@ const travelFees = [
   { range: "71–90 miles", fee: "$105" },
 ];
 
-const policies = [
-  {
-    title: "Booking Deposit",
-    body: "A non-refundable $100 deposit secures your wedding date and is applied toward your day-of services. Payment accepted via Venmo or Zelle.",
-  },
-  {
-    title: "Cancellations & Rescheduling",
-    body: "At least 48 hours' notice is required for any cancellation or reschedule request. Deposits are non-refundable.",
-  },
-  {
-    title: "Late Arrivals",
-    body: "A $15 late fee will be applied to your invoice for late arrivals. Please plan accordingly, especially on wedding days.",
-  },
-  {
-    title: "No-Call / No-Show",
-    body: "Clients who no-call / no-show will be blocked from future bookings.",
-  },
-];
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -196,8 +178,7 @@ export default function ServicesPage() {
             <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
               Elizabeth comes to you — your venue, home, or getting-ready
               suite. Travel is a flat fee calculated by distance from Rockwall,
-              TX, starting at $45 for the first 30 miles. Parking
-              and toll fees are added to your invoice when incurred.
+              TX, starting at $45 for the first 30 miles.
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -272,7 +253,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Booking & cancellation policy */}
+      {/* Booking policy */}
       <section className="py-20 px-6 bg-cream">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
@@ -280,27 +261,19 @@ export default function ServicesPage() {
               Before You Book
             </p>
             <h2 className="font-serif text-4xl md:text-5xl text-charcoal mb-5">
-              Booking &amp; Cancellation Policy
+              Booking Policy
             </h2>
             <div className="w-12 h-px bg-dusty-rose mx-auto" />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-dusty-rose/20">
-            {policies.map((policy, i) => (
-              <div
-                key={policy.title}
-                className="bg-cream px-6 py-7 flex flex-col gap-3"
-              >
-                <span className="font-serif text-terracotta text-xl">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="font-serif text-2xl text-charcoal">
-                  {policy.title}
-                </h3>
-                <p className="font-sans text-sm text-charcoal/70 leading-relaxed">
-                  {policy.body}
-                </p>
-              </div>
-            ))}
+          <div className="max-w-xl mx-auto text-center flex flex-col gap-3">
+            <h3 className="font-serif text-2xl text-charcoal">
+              Booking Deposit
+            </h3>
+            <p className="font-sans text-sm text-charcoal/70 leading-relaxed">
+              A non-refundable $100 deposit secures your wedding date and is
+              applied toward your day-of services. Payment accepted via Venmo
+              or Zelle.
+            </p>
           </div>
         </div>
       </section>
