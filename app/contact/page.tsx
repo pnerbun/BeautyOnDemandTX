@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   title: "Book Your Wedding Hair & Makeup | Beauty on Demand Rockwall, TX",
   description:
-    "Check availability & get a custom quote for on-location bridal hair and makeup in Rockwall & DFW. Response within 1–2 business days. No travel fee in Rockwall.",
+    "Check availability & get a custom quote for on-location bridal hair and makeup in Rockwall & DFW. Responds within 24 hours. No travel fee in Rockwall.",
 };
 
 export default function ContactPage() {
@@ -21,8 +21,8 @@ export default function ContactPage() {
         </h1>
         <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
         <p className="font-sans text-charcoal/60 text-base max-w-lg mx-auto">
-          Fill out the form below and Elizabeth will be in touch within 1–2
-          business days to discuss your wedding day vision.
+          Fill out the form below and Elizabeth will be in touch within 24
+          hours to discuss your wedding day vision.
         </p>
       </section>
 
@@ -78,10 +78,9 @@ export default function ContactPage() {
               <div className="w-6 h-px bg-dusty-rose mb-5" />
               <ul className="flex flex-col gap-3">
                 {[
-                  "Response within 1–2 business days",
+                  "Responds within 24 hours",
                   "Custom quote for your party size",
                   "Availability check for your date",
-                  "No pressure — just a conversation",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="text-sage shrink-0 mt-0.5">✦</span>

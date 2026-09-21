@@ -28,11 +28,7 @@ export default function GalleryPage() {
         <h1 className="font-serif text-5xl md:text-6xl text-charcoal mb-5">
           Gallery
         </h1>
-        <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
-        <p className="font-sans text-charcoal/60 text-base max-w-lg mx-auto">
-          A glimpse into our bridal work — every look crafted with care,
-          delivered on-location.
-        </p>
+        <div className="w-12 h-px bg-dusty-rose mx-auto" />
       </section>
 
       {/* Gallery grid */}

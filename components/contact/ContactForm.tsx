@@ -63,7 +63,7 @@ export default function ContactForm() {
         </h2>
         <p className="font-sans text-charcoal/60 max-w-sm mx-auto">
           Your inquiry has been received. Elizabeth will get back to you within
-          1–2 business days to discuss your wedding day plans.
+          24 hours to discuss your wedding day plans.
         </p>
       </div>
     );

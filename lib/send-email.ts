@@ -101,7 +101,7 @@ ${data.message || "No message provided"}
     text: `
 Hi ${data.name},
 
-Thank you for reaching out! I've received your inquiry and will get back to you within 1–2 business days to discuss your wedding day plans.
+Thank you for reaching out! I've received your inquiry and will get back to you within 24 hours to discuss your wedding day plans.
 
 In the meantime, feel free to browse the gallery or follow along on Instagram @elizabethnerbun.
 
@@ -117,7 +117,7 @@ elizabethnerbun@gmail.com
     <p style="font-size: 13px; color: #888; margin: 0; font-family: Arial, sans-serif;">Beauty on Demand · Rockwall, TX</p>
   </div>
   <div style="padding: 32px; background: #fff; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.7; color: #444;">
-    <p>I've received your inquiry and will be in touch within <strong>1–2 business days</strong> to discuss your wedding day plans.</p>
+    <p>I've received your inquiry and will be in touch within <strong>24 hours</strong> to discuss your wedding day plans.</p>
     <p>In the meantime, feel free to browse the gallery or follow along on Instagram for the latest looks and behind-the-scenes moments.</p>
     <p style="margin-top: 32px;">
       <a href="https://www.instagram.com/elizabethnerbun" style="color: #C4714A; text-decoration: none;">@elizabethnerbun on Instagram</a>
