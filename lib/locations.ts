@@ -26,9 +26,9 @@ export const cities: City[] = [
     name: "Rockwall",
     county: "Rockwall County",
     heroKicker: "Rockwall County · Our Home Base",
-    metaTitle: "Wedding Hair & Makeup Rockwall, TX — No Travel Fee",
+    metaTitle: "Wedding Hair & Makeup Rockwall, TX — On-Location Bridal",
     metaDescription:
-      "On-location bridal hair & makeup in Rockwall starting at $175. No travel fee — Elizabeth comes to The Castle, Parrish House, or your venue. Book your date today.",
+      "On-location bridal hair & makeup in Rockwall starting at $175. Elizabeth comes to The Castle, Parrish House, or your venue. Book your wedding date today.",
     intro: [
       "Looking for on-location wedding hair and makeup in Rockwall, TX? Beauty on Demand is based right here. Elizabeth Nerbun brings the salon to you — your home, your hotel suite, or your venue's bridal room — so your wedding morning starts calmly, with the people you love, instead of in a salon chair across town.",
       "Rockwall is where Elizabeth lives and works, which means no long drive and no rushed arrival: she is set up and ready before the day gets away from you. Licensed since 2002 and a certified instructor since 2013, she builds every look around you — soft and romantic, sleek and modern, or effortlessly boho — and keeps your whole party on schedule from the first photo through the last dance.",
@@ -58,7 +58,7 @@ export const cities: City[] = [
       },
     ],
     travelNote:
-      "Rockwall is home base, so there's no travel fee at all — you get the full on-location experience with none of the added cost.",
+      "Rockwall is home base, so travel stays at our lowest flat rate — you get the full on-location experience with the smallest added cost.",
     nearbyTowns: ["Heath", "Fate", "Royse City", "Rowlett"],
   },
   {

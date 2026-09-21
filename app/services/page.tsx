@@ -18,7 +18,6 @@ const pricing = [
 ];
 
 const travelFees = [
-  { range: "In Rockwall", fee: "None" },
   { range: "1–30 miles", fee: "$45" },
   { range: "31–50 miles", fee: "$65" },
   { range: "51–70 miles", fee: "$85" },
@@ -196,13 +195,12 @@ export default function ServicesPage() {
             <div className="w-12 h-px bg-dusty-rose mx-auto mb-6" />
             <p className="font-sans text-charcoal/60 max-w-lg mx-auto leading-relaxed">
               Elizabeth comes to you — your venue, home, or getting-ready
-              suite. <strong className="font-normal text-charcoal">There is
-              no travel fee anywhere in Rockwall.</strong> Beyond that, travel
-              is a flat fee calculated by distance from Rockwall, TX. Parking
+              suite. Travel is a flat fee calculated by distance from Rockwall,
+              TX, starting at $45 for the first 30 miles. Parking
               and toll fees are added to your invoice when incurred.
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {travelFees.map((tier) => (
               <div
                 key={tier.range}

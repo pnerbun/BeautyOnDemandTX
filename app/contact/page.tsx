@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   title: "Book Your Wedding Hair & Makeup | Beauty on Demand Rockwall, TX",
   description:
-    "Check availability & get a custom quote for on-location bridal hair and makeup in Rockwall & DFW. Responds within 24 hours. No travel fee in Rockwall.",
+    "Check availability & get a custom quote for on-location bridal hair and makeup in Rockwall & DFW. Serving Rockwall, Heath & Fate. Responds within 24 hours.",
 };
 
 export default function ContactPage() {
@@ -59,8 +59,8 @@ export default function ContactPage() {
                 Proudly serving Rockwall, TX and the DFW metro area.
               </p>
               <p className="font-sans text-xs text-charcoal/50 mt-3 italic">
-                No travel fee within Rockwall. Beyond it, a flat fee based on
-                distance applies — see the schedule on our{" "}
+                Travel is a flat fee based on distance from Rockwall, starting
+                at $45 — see the schedule on our{" "}
                 <a
                   href="/services"
                   className="text-terracotta underline underline-offset-2 hover:text-terracotta-dark transition-colors not-italic"
