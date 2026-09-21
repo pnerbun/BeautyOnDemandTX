@@ -13,9 +13,8 @@ const pricing = [
   { label: "Bridal trial", hair: "$175", makeup: "$175" },
   { label: "Day-of — bride", hair: "$175", makeup: "$175" },
   { label: "Bridesmaid / wedding party", hair: "$125", makeup: "$125" },
-  { label: "Youth (8–12)", hair: "$80", makeup: "$80" },
   { label: "Flower girls (7 & under)", hair: "$65", makeup: "$25" },
-  { label: "Extensions (bring your own)", hair: "$50", makeup: "—" },
+  { label: "Extensions (attaching bride-owned clip-ins)", hair: "$50", makeup: "—" },
 ];
 
 const travelFees = [
