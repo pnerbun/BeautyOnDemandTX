@@ -71,7 +71,6 @@ A sleek chignon takes different time than a loose, flower-adorned half-up style 
 Every add-on adds time—and they add up fast. Common additions that affect your timeline:
 
 - **False lashes:** 10–15 minutes  
-- **Airbrush foundation:** 15–20 additional minutes vs. traditional  
 - **Hair extensions (prep and blend):** 20–40 minutes  
 - **Intricate braiding or floral placements:** 20–45 minutes
 
@@ -257,7 +256,7 @@ For the bride, hair generally comes first and makeup last. This keeps makeup fre
 Hair first, makeup second is the preferred order for the bride. For the rest of the party, it depends on the number of artists and the most efficient schedule for your specific group size.
 
 **How long does bridal makeup take by itself?**  
-Bridal makeup alone typically takes **60–75 minutes** for the bride, and **45 minutes** per bridesmaid. If airbrush application or detailed eye work is involved, add 15–20 minutes.
+Bridal makeup alone typically takes **60–75 minutes** for the bride, and **45 minutes** per bridesmaid. If detailed eye work is involved, add 15–20 minutes.
 
 **Is a bridal hair and makeup trial really necessary?**  
 Yes—and not just for finding the right look. A trial means your artist already knows your hair texture, face shape, skin type, and preferences on your wedding day. That knowledge alone can save 20–30 minutes of working time on the morning itself. It's the best investment you can make in your timeline.
